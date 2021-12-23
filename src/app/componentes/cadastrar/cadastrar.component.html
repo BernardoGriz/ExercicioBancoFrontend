@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="col">
+    <form>
+      <div class="mb-1">
+        <label class="form-label">Nome do Clinte:</label>
+        <input [(ngModel)]="transferencia.nomeCliente" type="text" class="form-control" name="nomeCliente">
+      </div>
+      <div class="mb-1">
+        <label class="form-label">Número da conta:</label>
+        <input [(ngModel)]="transferencia.contaCliente" type="text" class="form-control" name="contaCliente">
+      </div>
+      <div class="mb-1">
+        <label class="form-label">Valor da transferência:</label>
+        <input [(ngModel)]="transferencia.valor" type="text" class="form-control" name="valor">
+      </div>
+      <div class="mb-5">
+        <button (click)='adicionar()' class="btn btn-success">Adicionar</button>
+      </div>
+    </form>
+  </div>
+</div>
